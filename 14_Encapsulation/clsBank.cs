@@ -82,9 +82,41 @@ namespace _14_Encapsulation
             }
         }
 
-        
 
         #endregion
+        #region Properties/değişkenlere uygulanabilir...
+        // Özellikler C# da tanıtılan yeni bir dil özelliğidir.C# daki özellikler, değerleri okuyarak ve yazarak bir sınıfın bir alanının veya değişkeninin korunmasına yardımcı olur. İlk yaklaşım, yani ayarlayıcı ve atıcının kendisi iyidir,
+        //ancak C# daki veri kapsülleme özelliklerle çok daha pürüzsüz olarak gerçekleştirilebilir.
+
+        private int _Amount1;
+        public int Amount1 
+        {
+            get
+            {
+                return _Amount1;
+
+            }
+            set 
+            {
+                if (value < 0)
+                {
+                    throw new Exception("Lütfen pozitif bir değer giriniz...");
+                }
+                else
+                {
+                    _Amount1 = value;
+                }
+                
+            }
+            
+        }
+        public int _Amount { get; set; }
+
+
+
+        #endregion
+
+
 
 
 
