@@ -17,7 +17,16 @@ internal class Program
 
         #endregion
 
-        
+        #region Getter / Setter
+
+        clsBank bankgs = new clsBank();
+
+        bankgs.SetBalanceCaps(500);
+
+        Console.WriteLine($"Balance miktarı :  {bankgs.GetBalanceCaps() }");
+
+
+        #endregion
 
 
 
