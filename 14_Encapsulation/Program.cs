@@ -47,14 +47,19 @@ internal class Program
         //Hata yakalama bölümü
         try
         {
+            int deger;
             clsBank bank3= new clsBank();
 
-            bank3.SetAmount(1500);
+            Console.WriteLine("Lütfen değeri giriniz...");
+            deger = Convert.ToInt32(Console.ReadLine());
 
+            bank3.SetAmount(deger);
             Console.WriteLine($"\n\nDüzgün durum\n\nBankadaki miktar : {bank3.GetAmount()} PNG Kina");
 
-            bank3.SetAmount(-5000);
+            Console.WriteLine("Lütfen değeri giriniz...");
+            deger = Convert.ToInt32(Console.ReadLine());
 
+            bank3.SetAmount(deger);
             Console.WriteLine($"Bankadaki miktar : {bank3.GetAmount()} PNG Kina");
         }
         catch (Exception hata)
