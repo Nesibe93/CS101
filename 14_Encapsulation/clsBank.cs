@@ -31,7 +31,7 @@ namespace _14_Encapsulation
 
         #region Getter / Setter
 
-        private double balance; // yani burada dışarıya kapalı bir değişken tanımı var.
+        private double balance; // yani burada dışarıya kapalı bir değişken tanımı var..
 
         // set (setter) ve get (getter) metodlarının tanımlanması
 
