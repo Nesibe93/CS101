@@ -60,6 +60,33 @@ namespace _14_Encapsulation
         #endregion
 
 
+        #region 
+
+        public int Amount;
+
+        // Daha sonra gelecekte, müşteri uygulamanın negatif bir değere izin verememesini istiyor. Ardından miktar değişkeninde saklamadan önce kullanıcı tarafından verilen değerleri doğrulamalıyız. Bu nedenle, kapsülleme ilkesini aşağıdaki gibi izleyerek uygulamayı geliştirmemiz gerekir. 
+
+        public int GetAmount() // get metodu
+        {
+            return Amount;
+        }
+        public void SetAmount(int Amount)
+        {
+            if (Amount > 0)
+            {
+                this.Amount = Amount;
+            }
+            else
+            {
+                throw new Exception("Lütfen pozitif bir sayı giriniz...");
+            }
+        }
+
+        
+
+        #endregion
+
+
 
 
     }
