@@ -70,9 +70,48 @@ internal class Program
 
         #endregion
 
-       
 
+        #region Properties/değişkenlere uygulanabilir...
 
+        // Özellikler C# da tanıtılan yeni bir dil özelliğidir.C# daki özellikler, değerleri okuyarak ve yazarak bir sınıfın bir alanının veya değişkeninin korunmasına yardımcı olur. İlk yaklaşım, yani ayarlayıcı ve atıcının kendisi iyidir,
+        //ancak C# daki veri kapsülleme özelliklerle çok daha pürüzsüz olarak gerçekleştirilebilir.
+
+        try
+        {
+            clsBank bank4 = new clsBank();
+            //We cannot access the _Amount Variable directly
+            //bank._Amount = 50; //Compile Time Error
+            //Console.WriteLine(bank._Amount); //Compile Time Error
+            //Setting Positive Value using public Amount Property
+            bank4.Amount1 = 10;
+
+            //Setting the Value using public Amount Property
+            Console.WriteLine($"Değer : {bank4.Amount1}");
+
+            //Setting Negative Value
+            bank4.Amount1 = -150;
+            Console.WriteLine($"Değer : {bank4.Amount1}\n\n");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        try
+        {
+            clsBank bank5 = new clsBank();
+
+            bank5._Amount2= 100;
+            Console.WriteLine($"Değer : {bank5._Amount2}"); // direk property tanımı yazabiliyorum
+
+            bank5._Amount2 = -5000;
+            Console.WriteLine($"Değer : {bank5._Amount2}"); // direk değişkenin property tanımını yazabiliyorum. Kendi anlıyor get e gideceğini
+        }
+        catch
+        {
+            Console.WriteLine("Lütfen pozitif bir sayı girin...");
+        }
+        #endregion
 
         Console.ReadKey();
     }
