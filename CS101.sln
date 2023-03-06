@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_Encapsulation", "14_Enca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_DWO1", "OOP_DWO1\OOP_DWO1.csproj", "{63286FBA-041A-4E9F-A86C-7D656DD70D1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_Abstraction", "15_Abstraction\15_Abstraction.csproj", "{6882E159-F854-47F3-BB19-9C1D880A86A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15_Abstraction", "15_Abstraction\15_Abstraction.csproj", "{6882E159-F854-47F3-BB19-9C1D880A86A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_Interfaces", "16_Interfaces\16_Interfaces.csproj", "{3D370FD6-FCA1-44C1-8C71-AF157799CB2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{6882E159-F854-47F3-BB19-9C1D880A86A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6882E159-F854-47F3-BB19-9C1D880A86A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6882E159-F854-47F3-BB19-9C1D880A86A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D370FD6-FCA1-44C1-8C71-AF157799CB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D370FD6-FCA1-44C1-8C71-AF157799CB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D370FD6-FCA1-44C1-8C71-AF157799CB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D370FD6-FCA1-44C1-8C71-AF157799CB2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
