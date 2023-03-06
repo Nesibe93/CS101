@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using _15_Abstraction;
+
+internal class Program
 {
     // basit bir örnek üzerinde isleyecek olursak; bir işletmemiz ve bu işletmeye bağlı çalışanlarımızın
     // bilgilerinin yer alacağı, çeşitli işlemlere imkan verecek bir sınıfımız ve bu sınıfa özelliklerin atanması sağlayacağımız bir abstract class oluşturarak gerekli bilgilerin çıktısını kullanıcıya iletmek isteyelim
@@ -15,6 +17,28 @@
 
     private static void Main(string[] args)
     {
+        // Öncelikle bir Beden işçisi oluşturalım
+
+        clsCreateEmployeeManager bodyworker = new clsCreateEmployeeManager(); // nesneyi yarattım
+
+        bodyworker.employeeBaseManager = new clsEmployeeManager();
+
+        bodyworker.Create();
+
+        bodyworker.getInfo();
+
+        // bir mühendis için
+
+        clsCreateEmployeeManager engineer = new clsCreateEmployeeManager();
+        
+        engineer.employeeBaseManager = new clsEngineerManager(); // Mühendisler için  
+
+        engineer.Create();
+
+        engineer.getInfo();
+
+
+
 
 
     }

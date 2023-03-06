@@ -23,7 +23,7 @@ namespace _15_Abstraction
             Console.WriteLine("<Create Employee Manager>\n\n -> Çalışanın ismi : ");
             name = Console.ReadLine();
 
-            Console.WriteLine(" -> Çalışanın soy ismi : Çalışanın ismi : ");
+            Console.WriteLine(" -> Çalışanın soy ismi : ");
             surName =Console.ReadLine();
 
             Console.WriteLine("-> Çalışanın Maaşı : ");
@@ -31,7 +31,6 @@ namespace _15_Abstraction
 
             employeeBaseManager.setInfo(name, surName, salary);
 
-            
         }
 
         public void getInfo()
