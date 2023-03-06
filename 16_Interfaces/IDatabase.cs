@@ -16,7 +16,7 @@ namespace _16_Interfaces
 
         void addValue(string value); // DataBase imize bir değer ekliyor
 
-        void deleteValue(string value); // DataBase imizden değer siler
+        void deleteValue(); // DataBase imizden değer siler
 
         void updateValue(string value); // DataBase imizde güncelleme yapar
 
